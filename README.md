@@ -14,8 +14,8 @@
 
 # Google Container Registry Plugin for Jenkins
 
-The Google Container Registry ([GCR](https://cloud.google.com/container-registry/)) Plugin allows you
-to incorporate features provided by the GCR service within your Jenkins pipelines.
+The Google Container Security Plugin allows you to incorporate security features provided by GCP
+within your Jenkins pipelines. See [GCR](https://cloud.google.com/container-registry/) for more.
 
 ## Documentation
 
@@ -27,7 +27,7 @@ to incorporate features provided by the GCR service within your Jenkins pipeline
 1.  (Optional) Make sure the plugin manager has updated data by clicking the
     **Check now** button.
 1.  In the Plugin Manager, click the **Available** tab and look for the "Google
-    Container Registry Plugin".
+    Container Security Plugin".
 1.  Check the box under the **Install** column and click the **Install without
     restart** button.
 1.  If the plugin does not appear under **Available**, make sure it appears
@@ -44,7 +44,7 @@ to incorporate features provided by the GCR service within your Jenkins pipeline
 ## Feature requests and bug reports
 
 Please file feature requests and bug reports as
-[github issues](https://github.com/jenkinsci/google-container-registry-plugin/issues).
+[github issues](https://github.com/jenkinsci/google-container-security-plugin/issues).
 
 ## Community
 

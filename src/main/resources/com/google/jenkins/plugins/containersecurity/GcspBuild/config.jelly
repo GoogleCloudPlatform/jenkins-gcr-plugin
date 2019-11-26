@@ -1,0 +1,38 @@
+<!--
+ Copyright 2019 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+
+        https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software distributed under the License
+ is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ implied. See the License for the specific language governing permissions and limitations under the
+ License.
+-->
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler"
+         xmlns:f="/lib/form" xmlns:c="/lib/credentials">
+    <f:entry field="credentialsId" title="${%Service Account Credentials}">
+        <c:select checkMethod="post"/>
+    </f:entry>
+    <f:entry field="projectId" title="${%Project ID}">
+        <f:select/>
+    </f:entry>
+    <f:entry field="containerUri" title="${%Container URI}">
+        <f:textbox/>
+    </f:entry>
+    <f:entry field="containerQualifierType" title="${%What type of container qualifier?}">
+        <f:select/>
+    </f:entry>
+    <f:entry field="containerQualifier" title="${%Container Qualifier}">
+      <f:textbox/>
+    </f:entry>
+    <f:entry title="${%Build Steps}"
+             description="${%List of GCR build steps to run on the selected container image.}">
+        <f:repeatableHeteroProperty field="buildSteps">
+            <st:include page="config.jelly" class="${descriptor.clazz}"/>
+        </f:repeatableHeteroProperty>
+    </f:entry>
+</j:jelly>

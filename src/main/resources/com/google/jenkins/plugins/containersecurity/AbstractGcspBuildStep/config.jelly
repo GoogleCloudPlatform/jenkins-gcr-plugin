@@ -11,14 +11,8 @@
  implied. See the License for the specific language governing permissions and limitations under the
  License.
 -->
-
-# Google Container Security Plugin Jenkins Configuration
-
-This contains information related to the Jenkins configuration for the Google Container Security
-plugin repository.
-
-# Maven/Kubectl Container Image
-
-This project depends on the container [gcr.io/jenkins-gke-plugin/maven-kubectl](maven-kubectl/Dockerfile)
-for executing integration tests. See the [GCR Getting Started](https://cloud.google.com/container-registry/docs/quickstart)
-guide for information on building and publishing a container image to GCR.
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler">
+  <!-- Allow implementations to hook in form elements -->
+  <st:include class="${descriptor.clazz}" page="elements.jelly" optional="true"/>
+</j:jelly>
