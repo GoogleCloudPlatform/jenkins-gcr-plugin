@@ -22,6 +22,7 @@
     <relativePath/>
   </parent>
 
+  <groupId>io.jenkins.plugins</groupId>
   <artifactId>google-container-security</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
