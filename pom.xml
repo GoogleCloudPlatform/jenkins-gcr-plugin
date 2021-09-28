@@ -72,7 +72,7 @@
     <workflow-step-api.version>2.20</workflow-step-api.version>
     <plain-credentials.version>1.5</plain-credentials.version>
     <google.guava.version>20.0</google.guava.version>
-    <google.api.version>1.25.0</google.api.version>
+    <google.api.version>1.31.0</google.api.version>
     <google.http.version>1.21.0</google.http.version>
     <binaryauthorization.revision>38</binaryauthorization.revision>
     <cloudkms.revision>89</cloudkms.revision>
